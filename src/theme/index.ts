@@ -4,6 +4,19 @@ import sizes from './config/sizes';
 import space from './config/space';
 import baseColors from './config/colors';
 
+const colors = {
+  white: baseColors.white,
+  black: baseColors.black,
+  primary: baseColors.deepRed,
+  primaryBackground: baseColors.lightGrey,
+  secondaryBackground: baseColors.deepBlue,
+  tertiaryBackground: baseColors.white,
+  headingColor: baseColors.deepBlue,
+  warning: baseColors.deepRed,
+  paragraph: baseColors.blackBlue,
+  border: baseColors.primaryGrey
+};
+
 const theme = {
   breakpoints,
   fonts,
@@ -11,18 +24,7 @@ const theme = {
   lineHeights,
   fontWeights,
   textStyles,
-  colors: {
-    white: baseColors.white,
-    black: baseColors.black,
-    primary: baseColors.deepRed,
-    primaryBackground: baseColors.lightGrey,
-    secondaryBackground: baseColors.deepBlue,
-    tertiaryBackground: baseColors.white,
-    headingColor: baseColors.deepBlue,
-    warning: baseColors.deepRed,
-    paragraph: baseColors.blackBlue,
-    border: baseColors.primaryGrey
-  },
+  colors,
   sizes,
   space
 };
